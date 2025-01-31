@@ -1,0 +1,189 @@
+/* Barra de navegación */
+nav {
+    z-index: 10;
+}
+
+nav .nav-link {
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en los enlaces de navegación */
+nav .nav-link:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+/* Sección de Presentación (Banner) */
+#banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner .text-container {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro más opaco */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1; /* Asegura que el contenedor de texto esté por encima de la capa de imagen */
+}
+
+/* Efecto hover en el contenedor de texto */
+#banner .text-container:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.9); /* Más oscuro al hacer hover */
+}
+
+#banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#banner h1:hover {
+    color: #ff9800;
+    text-shadow: 0 0 15px rgba(255, 152, 0, 0.6);
+}
+
+#banner p {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#banner p:hover {
+    color: #ff9800;
+}
+
+/* Efecto hover en el botón */
+#banner .btn:hover {
+    background-color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Sección Sinopsis */
+#sinopsis {
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+#sinopsis h2 {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+#sinopsis h2:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+#sinopsis p {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+#sinopsis p:hover {
+    color: #ff9800;
+}
+
+#sinopsis .lead {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Sección Galería */
+#galeria {
+    height: 100vh;
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+#galeria .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#galeria .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+
+#galeria .carousel-inner img:hover {
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
+}
+
+/* Responsividad: Ajustar el tamaño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    #galeria .carousel-inner img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #galeria .carousel-inner img {
+        height: 200px;
+    }
+}
+
+/* Sección Películas Recomendadas */
+#recomendaciones {
+    height: 100vh;
+    padding: rem 0;
+    background-color: #222;
+}
+
+#recomendaciones h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    transition: all 0.3s ease;
+}
+
+#recomendaciones h2:hover {
+    text-decoration: underline;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body .btn {
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 0 0;
+    text-align: center;
+}
+
+/* Efecto hover en el texto del footer */
+footer p:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+
